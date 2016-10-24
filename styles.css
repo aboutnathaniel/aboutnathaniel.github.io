@@ -71,5 +71,23 @@ a {
 .about {
     font-family: 'Raleway', sans-serif;
     color: #2D2D2F;
-    font-size: 17px
+    font-size: 2em;
+}
+
+#intrests_hobbies {
+    padding-left: 400px;
+    padding-right: 400px;
+    text-align: left;
+}
+
+#int_hobTitle {
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+ol {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
 }
