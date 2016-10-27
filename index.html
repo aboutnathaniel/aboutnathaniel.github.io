@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <head>
     <title>About Me|Nathaniel Samede</title>
-    <script
-        src="https://code.jquery.com/jquery-3.1.1.js"
-            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-            crossorigin="anonymous"></script>
+	<meta name="veiwport" content="width=device-width, initial-scale-1.0"
+	<meta name="veiwport" content="height=device-height"
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.js" integrity="sha256-p95IL1RESG1u1ynqmQcAY3f8iXyCWEBX/xtCjdUluG8=" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Raleway:100|Roboto:300');
     </style>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Raleway:100|Roboto:300" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="styles.css">
+	<script src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="animate.css"
 </head>
 
 <body>
-    <div id="banner">
-        <h1 id="landingTitle" class="title">Welcome To My Page</h1>
-        <h2 id="landingSubTitle">This page is about me</h2>
-        <a href="">
-            <button id="goButton" href="#whoAmI">Go!</button>
-        </a>
-    </div>
-
+    <header>
+        <div id="banner">
+            <h1 id="landingTitle" class="title animated bounceInDown">Welcome To My Page</h1>
+            <h2 id="landingSubTitle" class="animated animated bounceInLeft">This page is about me</h2>
+            
+                <button id="goButton" class="animated bounceInUp">Go!</button>
+            
+        </div>
+    </header>
     <div id="whoAmI">
-        <h1 id="whoAmITitle" class="title">Who am I?</h1>
-        <hr></hr>
-        <p id="whoIAm" class="about">My name is Nathaniel Samede and I am twelve years old. Thats pretty much it...</p>
+        <h1 id="whoAmITitle" class="title wow rollIn">Who am I?</h1>
+        <hr class="wow zoomIn"></hr>
+        <p id="whoIAm" class="about wow bounceIn">My name is Nathaniel Samede and I am twelve years old. Thats pretty much it...</p>
     </div>
     <div id="intrests_hobbies">
-        <hr></hr>
-        <h1 id="int_hobTitle" class="title">Intrests/hobbies</h1>
-        <hr></hr>
-        <ol>
+        <hr class="wow zoomIn"></hr>
+        <h1 id="int_hobTitle" class="title wow lightSpeedIn">Intrests/hobbies</h1>
+        <hr class="wow zoomIn"></hr>
+        <ol class="wow bounceIn">
             <td>
                 <li>I like to:</li>
                     <ul>
@@ -57,8 +61,20 @@
         </ol>
     </div>
     <div id="aBitMore">
-        <hr></hr>
-        <h1 id="bitMoreTitle" class="title">A bit more about me</h1>
-        <hr></hr>
+        <hr class="wow zoomIn"></hr>
+        <h1 id="bitMoreTitle" class="title wow bounceInLeft">A bit more about me</h1>
+        <hr class=" wow zoomIn"></hr>
+        <p id="aBitMoreAbout" class="about wow flipInY">I was born on the 7th of July 2004. I started school at the age three at Wharf in Surrey. I don't remeber anything from back then beacause it was a long, long time ago. To be honest, I don't remeber anything from the first school I went to. At the age of six I moved to West Drayton (where I am currently living) and joined Cherry Lane Primary School. It was just like any normal primary school to be honest, did a few plays(of which, I absolutley hated performing in), school trips(I loved school trips), you know, the regular stuff you would expect to do in a school. After four years at Cherry Lane, I was at the end of year 6. I had never missed a day off, they gave me Kindle tablet as a reward. After that, our school had a six weeks holiday, before everyone moves to the next academic year. In the holidays I didn't really do anything that important, just the usual stuff, football, videogames. After that I started at secondary school. I went to Stockley Academy for secondary school. It was just like any normal secondary school. Nothing happend in the first year. I have just recently finished the first 6 weeks of my second year at Stockley Academy. Nothing interesting has happend.
+       </p>
+	</div>
+	<div id="thanks">
+		<hr class="wow zoomIn"></hr>
+		<h1 id="thanksTitle" class="title wow tada">Thanks for reading!</h1>
+		<hr class="wow zoomIn"></hr>
+		<p id="thanks" class="about wow zoomIn">Thanks for visiting my website this took me around a month to develop. The actual <strong> coding</strong> took a few weeks. the <strong>planning </strong>took about two weeks and the <strong>design </strong>took about a week or two.</p>
+	</div>
+	<script>
+		new WOW().init();
+	</script>
     <script src="script.js"></script>
 </body>
